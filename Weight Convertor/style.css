@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2U2b0cjgjZSRekCxBW1ZOUrMC3rqJykKmPg&s') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    backdrop-filter: blur(20px);
+    background: rgba(199, 6, 6, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgb(66, 180, 41);
+}
+
+.converter-card {
+    text-align: center;
+    width: 320px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+    margin-bottom: 25px;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+.result-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 12px 14px;
+    border-radius: 10px;
+}
+
+#result {
+    font-size: 16px;
+    color: #00ffd0;
+    transition: opacity 0.3s ease;
+}
+
+#copyIcon {
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+#copyIcon:hover {
+    transform: scale(1.2);
+    color: #00ffd0;
+}
